@@ -21,7 +21,7 @@ jobs:
         run: |
           set -euo pipefail
           xcodebuild -project LiveAggregator.xcodeproj \
-            -target LiveAggregator \
+            -scheme LiveAggregator \
             -configuration Release \
             -destination 'generic/platform=iOS' \
             -derivedDataPath build/DerivedData \
